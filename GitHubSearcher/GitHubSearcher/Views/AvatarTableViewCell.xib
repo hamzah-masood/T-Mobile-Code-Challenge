@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AvatarTableViewCell" customModule="GitHubSearcher" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UuN-O7-7CZ">
+                        <rect key="frame" x="0.0" y="0.0" width="65" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="75K-Nk-UKO"/>
+                            <constraint firstAttribute="width" constant="65" id="JLx-To-jcI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXn-Jq-AQk">
+                        <rect key="frame" x="85" y="0.0" width="160" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="Df5-c9-5wo"/>
+                            <constraint firstAttribute="height" constant="50" id="GSd-dU-ekg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo #" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oP2-fN-rsl">
+                        <rect key="frame" x="255" y="0.0" width="55" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Ifh-uj-cpD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hXn-Jq-AQk" firstAttribute="leading" secondItem="UuN-O7-7CZ" secondAttribute="trailing" constant="20" id="CAy-9o-Poi"/>
+                    <constraint firstItem="UuN-O7-7CZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Jeh-yS-xkl"/>
+                    <constraint firstAttribute="bottom" secondItem="hXn-Jq-AQk" secondAttribute="bottom" id="RzE-yO-5VJ"/>
+                    <constraint firstItem="UuN-O7-7CZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ca9-zf-Ry0"/>
+                    <constraint firstItem="oP2-fN-rsl" firstAttribute="leading" secondItem="hXn-Jq-AQk" secondAttribute="trailing" constant="10" id="fnB-63-W5o"/>
+                    <constraint firstAttribute="bottom" secondItem="UuN-O7-7CZ" secondAttribute="bottom" id="gyN-kU-Ym4"/>
+                    <constraint firstItem="oP2-fN-rsl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hKt-Rh-EkT"/>
+                    <constraint firstAttribute="trailing" secondItem="oP2-fN-rsl" secondAttribute="trailing" constant="10" id="mnx-KI-WJn"/>
+                    <constraint firstItem="hXn-Jq-AQk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nI6-eo-LPT"/>
+                    <constraint firstAttribute="bottom" secondItem="oP2-fN-rsl" secondAttribute="bottom" id="tFJ-Tb-hua"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="UuN-O7-7CZ" id="cwx-x4-1iR"/>
+                <outlet property="repoNumberLabel" destination="oP2-fN-rsl" id="uWR-aj-d6V"/>
+                <outlet property="usernameLabel" destination="hXn-Jq-AQk" id="ckB-GP-LlM"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="86"/>
+        </tableViewCell>
+    </objects>
+</document>
