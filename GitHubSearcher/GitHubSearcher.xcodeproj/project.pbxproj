@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		043D4950248FDC3E00EF5FBB /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D494F248FDC3E00EF5FBB /* DateFormatters.swift */; };
+		043D4956249BE9F400EF5FBB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4955249BE9F400EF5FBB /* DetailViewController.swift */; };
+		043D4958249BEA1000EF5FBB /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043D4957249BEA0F00EF5FBB /* DetailTableViewCell.swift */; };
+		043D495A249BEA4800EF5FBB /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043D4959249BEA4800EF5FBB /* DetailTableViewCell.xib */; };
 		044C3427248DD667008E211E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C3426248DD667008E211E /* AppDelegate.swift */; };
 		044C3429248DD667008E211E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C3428248DD667008E211E /* SceneDelegate.swift */; };
 		044C342B248DD667008E211E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C342A248DD667008E211E /* ViewController.swift */; };
@@ -22,13 +25,13 @@
 		044C3456248EAB2C008E211E /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C3454248EAB2C008E211E /* AvatarTableViewCell.swift */; };
 		044C3457248EAB2C008E211E /* AvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044C3455248EAB2C008E211E /* AvatarTableViewCell.xib */; };
 		0458D5E0248EDC68003152A5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458D5DF248EDC68003152A5 /* DetailViewModel.swift */; };
-		0458D5E4248EEFBA003152A5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458D5E3248EEFBA003152A5 /* DetailViewController.swift */; };
-		0458D5E7248EF1E0003152A5 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458D5E5248EF1E0003152A5 /* DetailTableViewCell.swift */; };
-		0458D5E8248EFDD5003152A5 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0458D5E6248EF1E0003152A5 /* DetailTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043D494F248FDC3E00EF5FBB /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		043D4955249BE9F400EF5FBB /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		043D4957249BEA0F00EF5FBB /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		043D4959249BEA4800EF5FBB /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		044C3423248DD667008E211E /* GitHubSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044C3426248DD667008E211E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		044C3428248DD667008E211E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +48,6 @@
 		044C3454248EAB2C008E211E /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
 		044C3455248EAB2C008E211E /* AvatarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarTableViewCell.xib; sourceTree = "<group>"; };
 		0458D5DF248EDC68003152A5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		0458D5E3248EEFBA003152A5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = /Users/mcs/Documents/Training/GitHubSearcher/GitHubSearcher/DetailViewController.swift; sourceTree = "<absolute>"; };
-		0458D5E5248EF1E0003152A5 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailTableViewCell.swift; path = /Users/mcs/Documents/Training/GitHubSearcher/GitHubSearcher/DetailTableViewCell.swift; sourceTree = "<absolute>"; };
-		0458D5E6248EF1E0003152A5 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailTableViewCell.xib; path = /Users/mcs/Documents/Training/GitHubSearcher/GitHubSearcher/DetailTableViewCell.xib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +66,11 @@
 			children = (
 				044C342C248DD667008E211E /* Main.storyboard */,
 				044C342A248DD667008E211E /* ViewController.swift */,
-				0458D5E3248EEFBA003152A5 /* DetailViewController.swift */,
 				044C3454248EAB2C008E211E /* AvatarTableViewCell.swift */,
+				043D4957249BEA0F00EF5FBB /* DetailTableViewCell.swift */,
+				043D4955249BE9F400EF5FBB /* DetailViewController.swift */,
 				044C3455248EAB2C008E211E /* AvatarTableViewCell.xib */,
-				0458D5E5248EF1E0003152A5 /* DetailTableViewCell.swift */,
-				0458D5E6248EF1E0003152A5 /* DetailTableViewCell.xib */,
+				043D4959249BEA4800EF5FBB /* DetailTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,9 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				044C3433248DD668008E211E /* LaunchScreen.storyboard in Resources */,
-				0458D5E8248EFDD5003152A5 /* DetailTableViewCell.xib in Resources */,
 				044C3430248DD668008E211E /* Assets.xcassets in Resources */,
 				044C3457248EAB2C008E211E /* AvatarTableViewCell.xib in Resources */,
+				043D495A249BEA4800EF5FBB /* DetailTableViewCell.xib in Resources */,
 				044C342E248DD667008E211E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,19 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0458D5E4248EEFBA003152A5 /* DetailViewController.swift in Sources */,
 				044C3456248EAB2C008E211E /* AvatarTableViewCell.swift in Sources */,
 				044C344B248DE2B3008E211E /* ViewModel.swift in Sources */,
+				043D4958249BEA1000EF5FBB /* DetailTableViewCell.swift in Sources */,
 				044C342B248DD667008E211E /* ViewController.swift in Sources */,
 				043D4950248FDC3E00EF5FBB /* DateFormatters.swift in Sources */,
 				0458D5E0248EDC68003152A5 /* DetailViewModel.swift in Sources */,
 				044C3449248DDF48008E211E /* UserInfo.swift in Sources */,
-				0458D5E7248EF1E0003152A5 /* DetailTableViewCell.swift in Sources */,
 				044C3427248DD667008E211E /* AppDelegate.swift in Sources */,
 				044C3429248DD667008E211E /* SceneDelegate.swift in Sources */,
 				044C344D248E00E6008E211E /* Items.swift in Sources */,
 				044C3451248E069B008E211E /* UserRepoInfo.swift in Sources */,
 				044C344F248E02BE008E211E /* Users.swift in Sources */,
+				043D4956249BE9F400EF5FBB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
