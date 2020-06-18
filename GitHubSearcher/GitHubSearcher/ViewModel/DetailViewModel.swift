@@ -19,8 +19,7 @@ final class DetailViewModel {
     
     func getUserRepoData(userRepoURL: URL,session: Session = URLSession.shared, _ completion: (() -> Void)?) {
 
-        var request = URLRequest.init(url: userRepoURL)
-        request.addValue("token af5a35ca9a9f57bf4c340956312cf1daf7a2bbea", forHTTPHeaderField: "Authorization")
+        let request = URLRequest.init(url: userRepoURL)
         session.getData(from: request) { [weak self] (data, error) in
             defer { completion?() }
             guard let data = data,
